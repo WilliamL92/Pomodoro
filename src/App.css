@@ -1,38 +1,35 @@
-.App {
-  text-align: center;
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(#289496, #E6E3C0);
+
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -o-user-select: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.progressWork {
+  background-color: rgb(209, 192, 13) !important;
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, .25) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .25) 50%, rgba(255, 255, 255, .25) 75%, transparent 75%, transparent);
+  background-size: 1rem 1rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.progressPause {
+  background-color: rgb(73, 208, 75) !important;
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, .25) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .25) 50%, rgba(255, 255, 255, .25) 75%, transparent 75%, transparent);
+  background-size: 1rem 1rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.btn:focus {
+  outline: none;
+  box-shadow: none;
+  background-color: none;
+  background-color: rgba(255, 255, 255, 0);
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.textButton:hover {
+  color: white !important;
 }
